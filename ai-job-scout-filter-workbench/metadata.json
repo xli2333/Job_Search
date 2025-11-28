@@ -1,0 +1,5 @@
+{
+  "name": "AI Job Scout & Filter Workbench",
+  "description": "A human-in-the-loop recruiting assistant that aggregates jobs, uses AI to analyze fit based on resume and natural language preferences, and aids in final application decision-making.",
+  "requestFramePermissions": []
+}
