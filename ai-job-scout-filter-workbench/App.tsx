@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ScoredJob, UserConfig, AppStatus, Job, DBStatus } from './types';
 import { analyzeJobsBulk } from './services/geminiService';
 import { ConfigPanel } from './components/ConfigPanel';
-import { JobTable } = require('./components/JobTable');
+import { JobTable } from './components/JobTable';
 import { ArrowLeft, Loader2, Download, CheckSquare, Square } from 'lucide-react';
 import { API_BASE_URL } from './config';
 
