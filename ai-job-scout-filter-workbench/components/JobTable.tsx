@@ -93,7 +93,17 @@ export const JobTable: React.FC<JobTableProps> = ({ jobs, onToggleSelect }) => {
                     {job.analysis?.recommendation}
                  </div>
 
-                 <div className="mt-4">
+                 <div className="mt-4 flex items-center gap-4">
+                    <a
+                      href={job.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full hover:bg-stone-200 text-stone-400 hover:text-stone-900 transition-colors"
+                      title="直接投递 (Apply on LinkedIn)"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                       <ExternalLink className="w-5 h-5" />
+                    </a>
                     {isExpanded ? <Minus className="w-6 h-6 text-stone-900" /> : <Plus className="w-6 h-6 text-stone-300 group-hover:text-stone-900 transition-colors" />}
                  </div>
               </div>
